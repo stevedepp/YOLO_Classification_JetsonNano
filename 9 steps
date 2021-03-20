@@ -1,0 +1,44 @@
+Steve Depp 
+Final project update 75%
+You Only Look Once 
+Build --> Live detect in 7 steps
+
+1: quick L4T update: Tegra is Nvidia's system on a chip (SoC) for mobile devices: 
+
+sudo apt-get update
+
+2: needed environment variables otherwise model compile fails; cuda 10 please.
+
+export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+3: j reddie is out; doesnt like CV implications; alexey just published yolo3
+
+git clone https://github.com/AlexeyAB/darknet.git
+
+4: will use reddie's weights: tiny is faster but lesss accurate
+
+cd darknet
+wget https://pjreddie.com/media/files/yolov3.weights
+wget https://pjreddie.com/media/files/yolov3-tiny.weights
+
+6 can vi but i like nano better
+
+sudo apt install nano
+nano Makefile
+	GPU=1
+	CUDNN=1
+	OPENCV=1
+
+7 build it
+
+make
+
+8 run it on videos
+
+./darknet detector demo cfg/coco.data cfg/yolov3.cfg yolov3.weights test50.mp4 -i 0 -thresh 0.25
+./darknet detector demo cfg/coco.data cfg/yolov3.cfg yolov3.weights test52.mp4 -i 0 -thresh 0.25
+
+9 run it live; will not run upside down
+
+./darknet detector demo cfg/coco.data cfg/yolov3.cfg yolov3.weights "nvarguscamerasrc auto-exposure=1 ! video/x-raw(memory:NVMM), width=(int)1280, height=(int)720, format=(string)NV12, framerate=(fraction)60/1 ! nvvidconv flip-method=0 ! video/x-raw, width=(int)1280, height=(int)720, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink -e"

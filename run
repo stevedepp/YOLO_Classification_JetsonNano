@@ -1,0 +1,27 @@
+
+
+
+
+https://github.com/alsolh?tab=overview&from=2020-03-01&to=2020-03-31
+
+./darknet detector demo cfg/coco.data cfg/yolov3.cfg yolov3.weights "nvarguscamerasrc auto-exposure=1 ! video/x-raw(memory:NVMM), width=(int)1280, height=(int)720, format=(string)NV12, framerate=(fraction)60/1 ! nvvidconv flip-method=0 ! video/x-raw, width=(int)1280, height=(int)720, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink -e"
+
+https://robocademy.com/2020/05/01/a-gentle-introduction-to-yolo-v4-for-object-detection-in-ubuntu-20-04/
+
+
+./darknet detector demo cfg/coco.data cfg/yolov4.cfg yolov4.weights test50.mp4 -i 0 -thresh 0.25
+
+./darknet detector demo cfg/coco.data cfg/yolov3.cfg yolov3.weights http://192.168.1.121:8080/video?dummy=param.mjpg -i 0
+
+
+https://github.com/AlexeyAB/darknet
+
+
+https://help.ubuntu.com/stable/ubuntu-help/screen-shot-record.html
+
+https://github.com/alsolh/jetson-nano
+
+https://robocademy.com/2020/05/01/a-gentle-introduction-to-yolo-v4-for-object-detection-in-ubuntu-20-04/
+
+
+https://pysource.com/2019/08/29/yolo-v3-install-and-run-yolo-on-nvidia-jetson-nano-with-gpu/
