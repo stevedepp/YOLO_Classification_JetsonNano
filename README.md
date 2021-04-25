@@ -12,7 +12,7 @@ You can click this video to listen to sound or follow along with the slides and 
 > Hi this is Steve Depp.
 
 **Steve Depp   
-### Final Project update 75%   
+Final Project update 75%   
 You Only Look Once   
 Build —> Live detect in 7 steps** 
 
