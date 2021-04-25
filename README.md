@@ -1,4 +1,4 @@
-# YOLO_Classification_JetsonNano
+# YOLO Classification on the JetsonNano: Newscasters, ASL at a Beyonce concert, and is it a cat or a giraffe?
 
 TGIF project: a day to create a YOLO model for object detection and classification running on my Jetson Nano.
 
