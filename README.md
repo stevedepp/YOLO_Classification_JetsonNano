@@ -1,6 +1,6 @@
 # YOLO_Classification_JetsonNano
 
-TGIF project: a day to create a YOLO model for object detection and classification running on my Jetson Nano
+TGIF project: a day to create a YOLO model for object detection and classification running on my Jetson Nano.
 
 This video served as the 75% progress update for YOLO ASL project.
 
