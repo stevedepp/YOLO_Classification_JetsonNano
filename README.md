@@ -6,6 +6,10 @@ This video served as the 75% progress update for YOLO ASL project.
 
 You can click this video to listen to sound or follow along with the slides and transcript below the video.
 
+<video src="https://user-images.githubusercontent.com/38410965/111721866-20373580-8837-11eb-94ff-de4a4e55b454.mp4" controls autoplay loop muted style="max-width: 730px;">
+</video>
+
+
 ![demo](https://user-images.githubusercontent.com/38410965/111721866-20373580-8837-11eb-94ff-de4a4e55b454.mp4)
 
 #
